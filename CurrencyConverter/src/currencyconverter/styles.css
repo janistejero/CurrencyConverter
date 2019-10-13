@@ -1,0 +1,8 @@
+.background{
+    -fx-effect: dropshadow(three-pass-box , white, 10, 0.1 , 2, 4);
+}
+
+.linear-grad-to-left{
+    -fx-background-color: linear-gradient(to left, #777, #000);
+}
+

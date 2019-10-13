@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="300.0" maxWidth="500.0" minHeight="300.0" minWidth="500.0" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #000;" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currencyconverter.CalculatorController">
+   <children>
+      <Pane styleClass="linear-grad-to-left" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" maxHeight="35.0" maxWidth="500.0" minHeight="35.0" minWidth="500.0" prefHeight="35.0" prefWidth="500.0" text="T - Converter" textFill="WHITE" underline="true">
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Nova Light" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="toCurrencyCmb" layoutX="325.0" layoutY="130.0" prefWidth="150.0" />
+            <ComboBox fx:id="fromCurrencyCmb" layoutX="25.0" layoutY="130.0" prefWidth="150.0" />
+            <Button fx:id="convertBtn" layoutX="200.0" layoutY="220.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleConvertAction" prefHeight="50.0" prefWidth="100.0" text="Convert ">
+               <font>
+                  <Font name="Arial Nova Light" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="325.0" layoutY="100.0" minHeight="18.0" minWidth="150.0" prefHeight="18.0" prefWidth="150.0" text="To" textFill="WHITE">
+               <font>
+                  <Font name="Arial Nova Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="100.0" minHeight="18.0" minWidth="150.0" prefHeight="18.0" prefWidth="150.0" styleClass="text" stylesheets="@styles.css" text="From" textFill="WHITE">
+               <font>
+                  <Font name="Arial Nova Light" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amountTxt" layoutX="25.0" layoutY="175.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" promptText="Amount $" />
+            <Pane layoutX="180.0" layoutY="70.0" minHeight="0.0" prefHeight="100.0" prefWidth="140.0">
+               <children>
+                  <Label fx:id="fromLbl" alignment="CENTER" prefHeight="20.0" prefWidth="140.0" text="Das" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Nova Light" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="placeholderLbl" alignment="CENTER" layoutY="25.0" prefHeight="20.0" prefWidth="140.0" text="für" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Nova Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amountLbl" alignment="CENTER" layoutY="50.0" prefHeight="20.0" prefWidth="140.0" text="soviel" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Nova Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="toLbl" alignment="CENTER" layoutY="75.0" prefHeight="20.0" prefWidth="140.0" text="Von dem" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Nova Light" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

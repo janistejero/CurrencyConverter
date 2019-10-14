@@ -1,8 +1,17 @@
 .background{
-    -fx-effect: dropshadow(three-pass-box , white, 10, 0.1 , 2, 4);
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 0.5px;
+    border-top: none;
 }
 
 .linear-grad-to-left{
-    -fx-background-color: linear-gradient(to left, #777, #000);
+    -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,1) 17%,rgba(226,232,232,1) 59%,rgba(226,232,232,1) 59%);
+}
+
+.pane-border{
+    -fx-border-color: #565656;
+    -fx-border-style: solid;
+    -fx-border-width: 0.5px;
 }
 
